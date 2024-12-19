@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOHAN S PATEL - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+  }
+  
+  .hero .hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .hero .hero-text {
+    text-align: left;
+    max-width: 500px;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero p {
+    margin: 1rem 0;
+  }
+  
+  .hero .profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 1rem;
+    order: 2;
+  }
+  
+  .hero .btn {
+    display: inline-block;
+    background: #00bcd4;
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .hero .download-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  /* About Section */
+  .about, .skills, .projects, .contact {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  /* Skills Section */
+  .skills-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .skill {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  
+  /* Projects Section */
+  .project-card {
+    background: #f9f9f9;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  
+  /* Contact Section */
+  .contact form input, .contact form textarea, .contact form button {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Footer */
+  .footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .footer a {
+    color: #00bcd4;
+  }
+  
+
+.global-header {
+  background-color: #222; /
+  padding: 1rem 0;
+  position: sticky; 
+  top: 0;
+  z-index: 1000; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+
+.global-header nav {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+
+.global-header ul {
+  list-style: none; 
+  display: flex; 
+  gap: 1.5rem; 
+}
+
+/* Navigation Links */
+.global-header a {
+  color: #fff; 
+  text-decoration: none; 
+  font-weight: bold; 
+  transition: color 0.3s ease; 
+}
+
+/* Active Link */
+.global-header a.active {
+  color: #00bcd4; 
+  border-bottom: 2px solid #00bcd4; 
+  padding-bottom: 0.2rem;
+}
+
+/* Hover Effect */
+.global-header a:hover {
+  color: #00bcd4; 
+}
+
+</style>
+<body>
+  <header class="global-header">
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="biodata.html">Biodata</a></li>
+        <li><a href="resume.html">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>SOHAN S PATEL</h1>
+          <p>Creative Web Developer | AI & Gaming Enthusiast</p>
+        </div>
+        <img src="profile.jpg" alt="Your Profile Picture" class="profile-img">
+      </div>
+      
+      <!-- Highlighted Change: Update the resume link below to match the correct location -->
+      <a href="SOHAN_S_PATEL_Resume.pdf" class="btn download-btn">Download Resume</a> <!-- Change this -->
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Hi! I'm SOHAN S PATEL , a developer passionate about creating immersive gaming experiences and crafting dynamic web applications. I love working at the intersection of technology and storytelling to bring games to life.</p>
+      <p><strong>Fun Fact:</strong> I'm an avid gamer who has completed over 100 quests in RPGs and dream of creating my own open-world game someday!</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <h3>Programming Languages</h3>
+          <p>HTML, CSS, JavaScript, Python, C, C++</p>
+        </div>
+        <div class="skill">
+          <h3>Frameworks</h3>
+          <p>React, Node.js, Express.js, Unreal Engine, Unity</p>
+        </div>
+        <div class="skill">
+          <h3>Tools</h3>
+          <p>Git, VS Code, MongoDB, Blender, Maya, GameMaker Studio</p>
+        </div>
+        <div class="skill">
+          <h3>Gaming-Specific Tools</h3>
+          <p>Godot, Unreal Blueprints, OpenGL, DirectX, Phaser.js</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+        <!-- HTML Form -->
+<form id="contactForm">
+  <input type="text" id="name" name="name" placeholder="Your Name" required />
+  <input type="email" id="email" name="email" placeholder="Your Email" required />
+  <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+  <button type="submit">Send Message</button>
+</form>
+
+<div id="formResponse" style="display:none;"></div>
+
+      <div class="social-links">
+        <a href="https://github.com/patelsohan">GitHub</a>
+        <a href="https://www.linkedin.com/in/sohan-s-patel-349915251">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2024 Your Name. All rights reserved.</p>
+    <a href="#top">Back to Top</a>
+  </footer>
+
+  <script src="assets/css/js/images/script.js"></script>
+</body>
+
+</html>
